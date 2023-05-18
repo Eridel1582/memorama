@@ -53,7 +53,7 @@ function MezclarCarta() {
     cartas.forEach((cartas, i) => {
         cartas.classList.remove("flip")
         let imgTag = cartas.querySelector(".Frente img")
-        imgTag.src = `img/img-${posicion[i]}.jpg`
+        imgTag.src = `./img-${posicion[i]}.jpg`
         cartas.addEventListener("click", InvertirCartas)
     });
 }
